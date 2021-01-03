@@ -6,31 +6,107 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .b {
+      background-color: lightgoldenrodyellow;
+      padding: 10px 5px;
+    }
+
+    .b>nav {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .b>nav>a {
+      font-size: 24px;
+      font-family: sans-serif;
+      color: blue;
+      text-decoration: none;
+    }
+
+    .item {
+      display: none;
+    }
+
+    div.img {
+      width: 100px;
+      height: 100px;
+
+    }
+
+    p {
+      color: black;
+      font-weight: bold;
+      text-align: center;
+      font-size: 25px;
+    }
 
 
+    .content {
+      background-color: lightgreen;
+      margin-top: 300px;
+      margin-left: 80px;
+      color: black;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 5px;
+      text-align: center;
+      float: left;
+      width: 25%;
+    }
   </style>
+
 </head>
 
 <body bgcolor="Turquoise">
-  <p style="position: relative; font-family: 標楷體;font-size: 40px; text-align: center;">經濟加分作業</p>
-  <img style="border-radius: 50%;position:relative;left: 150px;top:800px;margin:-75px;" src="image/台灣黑熊.jpeg" alt="圓形圖"
-    width="400" height="400">
-  <img style="border-radius: 50%;position:relative;left: 600px;top:250px;margin:-75px;" src="image/台灣.png" alt="圓形圖"
-    width="500" height="500">
-  <p style="position: relative;left: 100px;top: -300px; font-family: 標楷體;font-size: 35px;">1999~2019年台灣經濟成長率(單位%)</p>
-  <img src="image/1999~2019台灣經濟成長率.png" width="550" height="450"
-    style="position:relative;left: 180px;top:-200px;margin:-75px;">
-  <p style="position: relative;left: 100px;top: -140px; font-family: 標楷體;font-size: 35px;">資料出處:中華民國統計網</p>
-  <p style="position: relative;left: 800px;top: -150px; font-family: 標楷體;font-size: 35px;">1999~2019年台灣失業率(單位%)</p>
-  <img src=" image/1999~2019台灣失業率.png" width="550" height="450"
-    style="position:relative;left: 850px;top:-30px;margin:-75px;">
-  <p style="position: relative;left: 800px;top: 150px; font-family: 標楷體;font-size: 35px;">資料出處:中華民國統計網</p>
-  <p style="position: relative;left: 100px; font-family: 標楷體;font-size: 35px;">1999~2019年台灣物價上漲率(單位%)</p>
-  <img src="image/1999~2019台灣物價上漲率.png" width="550" height="450"
-    style="position:relative;left: 180px;top:110px;margin:-75px;">
-  <p style="position: relative;left: 100px;top: 150px; font-family: 標楷體;font-size: 35px;">資料出處:中華民國統計網</p>
-  <img style="border-radius: 50%;position:relative;left:900px;top: -230px; margin:-75px;" src="image/黑熊.jpg" alt="圓形圖"
-    width="400" height="400">
-</body>
+
+
+  <body>
+    <h1 align="center">經濟表單</h1>
+    <div class="e-root">
+      <div class="b">
+        <nav>
+          <a onclick="clickhere(this)">台灣經濟成長率</a>
+          <a onclick="clickhere(this)">台灣失業率</a>
+          <a onclick="clickhere(this)">台灣物價上漲率</a>
+        </nav>
+      </div>
+      <div>
+
+
+        <img src="image/1999~2019台灣經濟成長率.png" width="450" height="400"
+          style="position:relative;left: 130px;top:200px;margin:-75px;">
+      </div>
+      <div>
+        <div class="content">
+          <div class="p">經濟成長率</div>
+          一國的經濟成長指該國實質總產出或每人平均實質國民所得持續不斷增加的現象。<br>
+          通常所謂經濟成長率是指「實質總產出」或「實質國內生產毛額」的年增率。 國際間多以經濟成長率作為表示一國經濟實力、人民福祉和國際地位的指標
+        </div>
+        <p style="position: relative;left: -250px;top: 300px; font-family: 標楷體;font-size: 30px;">資料出處:中華民國統計網</p>
+      </div>
+    </div>
+    <div>
+
+      <img src=" image/1999~2019台灣失業率.png" width="450" height="400"
+        style="position:relative;left: 150px;top:-90px;margin:-75px;">
+
+    </div>
+
+    <div>
+      <img src="image/1999~2019台灣物價上漲率.png" width="450" height="400"
+        style="position:relative;left: 650px;top:-340px;margin:-75px;">
+    </div>
+
+
+  </body>
+
+
+
 
 </html>

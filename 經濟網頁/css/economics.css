@@ -1,0 +1,114 @@
+.egrowthrate1 {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+
+.unemploymentrate1 {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.priceincreaserate1 {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.priceincreaserate2 {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.word {
+  width: 35%;
+  position: absolute;
+  left: 57%;
+  top: 40%;
+  font-size: 20px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  left: 57%;
+  top: 30%;
+  width: 20%;
+}
+
+.bigtitle {
+  font-weight: bold;
+  font-size: 35px;
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+* {
+  box-sizing: border-box
+}
+
+/* Set height of body and the document to 100% */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 30px;
+  width: 25%;
+  font-weight: bold;
+}
+
+.tablink:hover {
+  background-color: #777;
+  color: white;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#economic {
+  background-color: rgba(247, 199, 137, 0.473);
+}
+
+#unemployment {
+  background-color: rgba(170, 170, 170, 0.61);
+}
+
+#priceincrease1 {
+  background-color: rgba(149, 248, 149, 0.5);
+}
+
+#priceincrease2 {
+  background-color: rgba(235, 206, 252, 0.685);
+}
